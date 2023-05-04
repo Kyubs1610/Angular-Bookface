@@ -1,0 +1,12 @@
+
+<div class="kyubs-face-card" [ngClass]="{ snapped : KyubsFace.buttonText === 'Unlike'}"> 
+    <h2>{{ KyubsFace.title | uppercase }}</h2>
+    <p class="location" *ngIf="KyubsFace.location">Photo prise à {{ KyubsFace.location | uppercase}}</p>
+    <p>Mis en ligne le {{ KyubsFace.createdDate | date:'dd/MM/yyyy' }}</p>
+    <img [src]="KyubsFace.imageUrl" [alt]="title">
+    <p>{{ KyubsFace.description }}</p>
+    
+        <button (click)="onSnap()">{{ KyubsFace.buttonText }}</button>
+        <div class="emoji" [ngStyle]="{ color: 'rgb(0, 0, ' + KyubsFace.kyubsCount + ')' }">🦊 {{ KyubsFace.kyubsCount }}</div>
+    
+    </div><br>

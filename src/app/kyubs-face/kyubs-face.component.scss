@@ -1,0 +1,71 @@
+
+.kyubs-face-card{
+    width: 55%;
+    margin: 0 auto;
+    border: 5px solid rgb(79, 79, 79);
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: black;
+
+    img{
+        width: 100%;
+        border-radius: 50px;
+        border: 2px solid rgb(79,79,79);
+      
+    }
+    button{
+        margin-top: 1rem;
+        width: 100%;
+        border-radius: 10px;
+        background-color: rgb(79, 79, 79);
+        color: white;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border: none;
+        cursor: pointer;
+      
+           
+            h2 {
+              margin-bottom: 0;
+            }
+            p {
+              font-weight: 300;
+              font-size: 16px;
+            }
+   
+          }
+    }
+    .emoji{
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .location{
+        font-size:0.8rem;
+        font-style: oblique 90deg;
+        
+    }
+
+
+.snapped {
+  background-color: rgb(2,70,99);
+  border: 5px solid #FF914D;
+  box-shadow: 0px 0px 10px 10px #FF914D;
+  color: #FF914D;
+  p, h2,.emoji{
+    background-color: rgb(2,70,99);
+    color: #FF914D
+  }
+  img{
+    border: 2px solid #FF914D
+  }
+  button {
+    background-color: rgb(5, 174, 247);
+    box-shadow: #FF914D 3px 3px 7px;
+    color: #FF914D;
+    &:active {
+      box-shadow: rgb(144, 167, 238) 0 0 5px;
+    }
+  }
+}
